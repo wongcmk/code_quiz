@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Code Quiz Challenge</title>
+       </head>
+
+    <body>
+        <div id="container">
+
+<!-- start page -->     
+        <div id="start-page" class="hide">
+                <h1>Code Quiz Challenge</h1>
+                    <h2>Try to answer coming up coding questions!</h2>
+                    <p>Please click Start button!</p>
+                <button id="start" aria-label="play" id="play">
+              <i class="fa fa-play" aria-hidden="true">Start Quiz!</i>
+            </button>
+        </div>
+
+        <div id="quiz" style="display: none">
+            <div id="questions"> <p>Question</p></div>
+              <div id="choice-buttons" class="choices">
+                  <div class="choice" id="A"onlick="checkAnswer('A')"></div>
+                  <div class="choice" id="B"onlick="checkAnswer('B')"></div>
+                  <div class="choice" id="C"onlick="checkAnswer('C')"></div>
+            </div>
+        
+
+        <div id="timer">
+            <div id="timerCounter"></div>
+
+    <div id="score" style="display: none">        
+        <form>
+            <input placeholder="name" id="name" />
+                <button id="submit">Submit</button>
+
+        </form>   
+    </div>
+</div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
